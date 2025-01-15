@@ -1,0 +1,15 @@
+local correctKey = "16526!guisgug!2yu-RivalsSURFHUB"
+
+if key == correctKey then
+    local success, errorMessage = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/theOnlyMan1/Surf-Hub/refs/heads/main/api.luarmor.txt"))()
+    end)
+
+    if not success then
+        print("Error executing script: " .. errorMessage)
+    else
+        print("Script executed successfully!")
+    end
+else
+    print("Invalid key entered. Script not executed.")
+end
